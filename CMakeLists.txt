@@ -20,7 +20,7 @@ enable_policy_if_exists(CMP0092) # MSVC warning flags are not in CMAKE_<LANG>_FL
 # Needed for ccache support with MSVC
 enable_policy_if_exists(CMP0141) # MSVC debug information format flags are selected by an abstraction.
 
-PROJECT(lmms)
+PROJECT(skinnymuz)
 
 SET(CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake/modules" ${CMAKE_MODULE_PATH})
 SET(LMMS_BINARY_DIR ${CMAKE_BINARY_DIR})
@@ -49,14 +49,14 @@ STRING(TOUPPER          "${CMAKE_PROJECT_NAME}" PROJECT_NAME_UCASE)
 
 SET(PROJECT_YEAR 2026)
 
-SET(PROJECT_AUTHOR      "LMMS Developers")
-SET(PROJECT_URL         "https://lmms.io")
-SET(PROJECT_EMAIL       "lmms-devel@lists.sourceforge.net")
-SET(PROJECT_DESCRIPTION "${PROJECT_NAME_UCASE} - Free music production software")
-SET(PROJECT_COPYRIGHT   "2008-${PROJECT_YEAR} ${PROJECT_AUTHOR}")
-SET(VERSION_MAJOR       "1")
-SET(VERSION_MINOR       "3")
-SET(VERSION_RELEASE     "0")
+SET(PROJECT_AUTHOR      "Angela Skinny")
+SET(PROJECT_URL         "https://empty.empty")
+SET(PROJECT_EMAIL       "empty.empty")
+SET(PROJECT_DESCRIPTION "${PROJECT_NAME_UCASE} - Лучшее DAW на рынке")
+SET(PROJECT_COPYRIGHT   "2026-${PROJECT_YEAR} ${PROJECT_AUTHOR}")
+SET(VERSION_MAJOR       "0")
+SET(VERSION_MINOR       "0")
+SET(VERSION_RELEASE     "2")
 SET(VERSION_STAGE       "alpha")
 SET(VERSION_BUILD       "")
 SET(VERSION             "${VERSION_MAJOR}.${VERSION_MINOR}.${VERSION_RELEASE}")
@@ -239,7 +239,7 @@ IF(SNDFILE_FOUND)
 		SET(LMMS_HAVE_SNDFILE_MP3 FALSE)
 	ENDIF()
 ELSE()
-	MESSAGE(FATAL_ERROR "LMMS requires libsndfile1 and libsndfile1-dev >= 1.0.18 - please install, remove CMakeCache.txt and try again!")
+	MESSAGE(FATAL_ERROR "Skinnymuz requires libsndfile1 and libsndfile1-dev >= 1.0.18 - please install, remove CMakeCache.txt and try again!")
 ENDIF()
 # check if we can use SFC_SET_COMPRESSION_LEVEL
 INCLUDE(CheckCXXSourceCompiles)
