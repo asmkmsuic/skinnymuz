@@ -62,7 +62,7 @@ extern "C"
 Plugin::Descriptor PLUGIN_EXPORT zynaddsubfx_plugin_descriptor =
 {
 	LMMS_STRINGIFY( PLUGIN_NAME ),
-	"ZynAddSubFX",
+	"Skinny Synth",
 	QT_TRANSLATE_NOOP( "PluginBrowser",
 			"Embedded ZynAddSubFX" ),
 	"Tobias Doerffel <tobydox/at/users.sf.net>",
