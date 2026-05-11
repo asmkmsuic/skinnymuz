@@ -54,7 +54,7 @@ extern "C"
 Plugin::Descriptor PLUGIN_EXPORT bitinvader_plugin_descriptor =
 {
 	LMMS_STRINGIFY( PLUGIN_NAME ),
-	"BitInvader",
+	"Skinny BitInvader",
 	QT_TRANSLATE_NOOP( "PluginBrowser",
 				"Customizable wavetable synthesizer" ),
 	"Andreas Brandmaier <andreas/at/brandmaier/dot/de>",
