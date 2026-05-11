@@ -49,7 +49,7 @@ extern "C"
 Plugin::Descriptor PLUGIN_EXPORT kicker_plugin_descriptor =
 {
 	LMMS_STRINGIFY( PLUGIN_NAME ),
-	"Kicker",
+	"Arca Kick",
 	QT_TRANSLATE_NOOP( "PluginBrowser",
 				"Versatile drum synthesizer" ),
 	"Tobias Doerffel <tobydox/at/users.sf.net>",
@@ -283,15 +283,15 @@ KickerInstrumentView::KickerInstrumentView( Instrument * _instrument,
 	const int END_COL = COL1 + 48;
 	
 	m_startFreqKnob = new KickerLargeKnob( this );
-	m_startFreqKnob->setHintText( tr( "Start frequency:" ), "Hz" );
+	m_startFreqKnob->setHintText( tr( "Nachalo frequency:" ), "Hz" );
 	m_startFreqKnob->move( COL1, ROW1 );
 
 	m_endFreqKnob = new KickerLargeKnob( this );
-	m_endFreqKnob->setHintText( tr( "End frequency:" ), "Hz" );
+	m_endFreqKnob->setHintText( tr( "Konets frequency:" ), "Hz" );
 	m_endFreqKnob->move( END_COL, ROW1 );
 
 	m_slopeKnob = new KickerKnob( this );
-	m_slopeKnob->setHintText( tr( "Frequency slope:" ), "" );
+	m_slopeKnob->setHintText( tr( "Frequency neuroslop:" ), "" );
 	m_slopeKnob->move( COL3, ROW1 );
 
 	m_gainKnob = new KickerKnob( this );
@@ -299,11 +299,11 @@ KickerInstrumentView::KickerInstrumentView( Instrument * _instrument,
 	m_gainKnob->move( COL1, ROW3 );
 
 	m_decayKnob = new KickerEnvKnob( this );
-	m_decayKnob->setHintText( tr( "Envelope length:" ), "ms" );
+	m_decayKnob->setHintText( tr( "Envelope dlina:" ), "ms" );
 	m_decayKnob->move( COL2, ROW3 );
 
 	m_envKnob = new KickerKnob( this );
-	m_envKnob->setHintText( tr( "Envelope slope:" ), "" );
+	m_envKnob->setHintText( tr( "Envelope neuroslop:" ), "" );
 	m_envKnob->move( COL3, ROW3 );
 
 	m_clickKnob = new KickerKnob( this );
@@ -315,11 +315,11 @@ KickerInstrumentView::KickerInstrumentView( Instrument * _instrument,
 	m_noiseKnob->move( COL5, ROW3 );
 
 	m_distKnob = new KickerKnob( this );
-	m_distKnob->setHintText( tr( "Start distortion:" ), "" );
+	m_distKnob->setHintText( tr( "Nachalo distortion:" ), "" );
 	m_distKnob->move( COL4, ROW2 );
 
 	m_distEndKnob = new KickerKnob( this );
-	m_distEndKnob->setHintText( tr( "End distortion:" ), "" );
+	m_distEndKnob->setHintText( tr( "Konets distortion:" ), "" );
 	m_distEndKnob->move( COL5, ROW2 );
 
 	m_startNoteToggle = new LedCheckBox( "", this, "", LedCheckBox::LedColor::Green );
